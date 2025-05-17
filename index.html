@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoConnect - Connecting You to Sustainable Living</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="logo" href="#">EcoConnect</a>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <h1>Connecting You to Sustainable Living</h1>
+                <p>Explore eco-friendly initiatives and resources for a greener future.</p>
+                <a href="initiatives.html" class="button">Explore Initiatives</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="featured-initiatives">
+            <div class="container">
+                <h2>Featured Initiatives</h2>
+                <div class="initiatives-grid">
+                    <div class="initiative-card">
+                        <img src="images/initiative1.jpg" alt="Sustainable Farming">
+                        <h3>Sustainable Farming</h3>
+                        <p>Supporting local farmers and promoting eco-friendly agricultural practices.</p>
+                        <a href="initiatives.html#farming" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="initiative-card">
+                        <img src="images/initiative2.jpg" alt="Renewable Energy Adoption">
+                        <h3>Renewable Energy Adoption</h3>
+                        <p>Encouraging the use of solar, wind, and other clean energy sources.</p>
+                        <a href="initiatives.html#energy" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="initiative-card">
+                        <img src="images/initiative3.jpg" alt="Waste Reduction Programs">
+                        <h3>Waste Reduction Programs</h3>
+                        <p>Implementing strategies to minimize waste and promote recycling.</p>
+                        <a href="initiatives.html#waste" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-ecoconnect">
+            <div class="container">
+                <h2>Why EcoConnect?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <img src="images/learn-icon.png" alt="Learn">
+                        <h3>Learn</h3>
+                        <p>Access curated resources and information to deepen your understanding of sustainability.</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="images/connect-icon.png" alt="Connect">
+                        <h3>Connect</h3>
+                        <p>Join a community of like-minded individuals and organizations working towards a common goal.</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="images/act-icon.png" alt="Act">
+                        <h3>Act</h3>
+                        <p>Find opportunities to get involved in meaningful initiatives and make a real difference.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What People Are Saying</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"EcoConnect has been an invaluable resource in my journey towards sustainable living. The initiatives are inspiring and the community is supportive."</p>
+                        <cite>- Jane Doe</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I've found practical tips and connected with amazing people through EcoConnect. It's making a real impact!"</p>
+                        <cite>- John Smith</cite>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join our newsletter for the latest updates and opportunities.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit" class="button">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EcoConnect. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27ae60; /* Green accent color */
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #27ae60;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue heading color */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #219653;
+}
+
+/* Featured Initiatives */
+.featured-initiatives {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.featured-initiatives h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.initiatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.initiative-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.initiative-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.initiative-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.initiative-card p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #219653;
+}
+
+/* Why EcoConnect */
+.why-ecoconnect {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.why-ecoconnect h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.benefit {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.benefit img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit p {
+    color: #777;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.testimonial-slider {
+    /* Basic styling for slider - you'll need JavaScript for actual sliding functionality */
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    min-width: 300px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #e0f7fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+}
+
+.newsletter-form button {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #219653;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-left: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .initiatives-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+    }
+
+    .footer-links li {
+        margin: 0 10px;
+    }
+}
+
+    <script src="js/script.js"></script>
+</body>
+</html>
